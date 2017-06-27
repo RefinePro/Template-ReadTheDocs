@@ -21,9 +21,17 @@
                 <a href="{{ baseUrl }}/" class="fa fa-home"> {{ title|default('The title') }}</a>
             </div>
 
+
+            {% for section in menu.sections %}
+                       
+                        
+
             <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">{{ section.name }}</span></p>
+
                 <ul>
-                    {% for itemId, item in menu.items %}
+
+                    {% for itemId, item in section.items %}
                         <li class="toctree-l1 {{ itemId == currentMenu ? 'current' }}">
                             <a class="reference internal {{ itemId == currentMenu ? 'current' }}"
                                href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">
@@ -34,6 +42,7 @@
                 </ul>
             </div>
             &nbsp;
+            {% endfor %}
         </nav>
 
         <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
