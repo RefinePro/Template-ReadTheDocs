@@ -39,3 +39,28 @@ pre {
     color: #555;
     white-space: nowrap;
 }
+
+
+thead {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+tbody {
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table tr {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    vertical-align: inherit;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 6px 13px;
+}
