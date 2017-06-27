@@ -41,6 +41,10 @@ pre {
 }
 
 
+table{
+    margin-bottom: 20px;
+}
+
 thead {
     margin: 0;
     padding: 0;
