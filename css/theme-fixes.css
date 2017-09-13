@@ -1,8 +1,11 @@
-.wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
+.wy-side-nav-search > a,
+.wy-side-nav-search .wy-dropdown > a {
     margin-bottom: 0;
 }
 
-.wy-nav-side { overflow: inherit; } 
+.wy-nav-side {
+    overflow: inherit;
+}
 
 /* Code blocks */
 pre > code {
@@ -25,8 +28,8 @@ pre {
     margin: 1px 0 24px 0;
 }
 
-
-.wy-menu-vertical header, .wy-menu-vertical p.caption {
+.wy-menu-vertical header,
+.wy-menu-vertical p.caption {
     height: 32px;
     display: inline-block;
     line-height: 32px;
@@ -40,8 +43,7 @@ pre {
     white-space: nowrap;
 }
 
-
-table{
+table {
     margin-bottom: 20px;
 }
 
@@ -73,4 +75,31 @@ table tr {
 table td {
     border: 1px solid #ddd;
     padding: 6px 13px;
+}
+
+.internal {
+    border: 1px solid #d9822b;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: relative;
+}
+
+.internal .label {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+
+    display: inline-block;
+
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: #d9822b;
+    min-width: 20px;
+    padding: 2px 6px;
+    line-height: 16px;
+    color: #f5f8fa;
+    font-size: 12px;
 }
