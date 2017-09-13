@@ -25,8 +25,7 @@ $(document).ready(function() {
     };
 
     function showInternalDoc() {
-        $(".internal-doc").show();
-        $(".internal-doc")
+        $("wy-nav-content-wrap .internal-doc")
             .append('<div class="internal-label">private documentation</div>')
             .show();
     }
