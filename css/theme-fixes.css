@@ -84,7 +84,7 @@ table td {
 .internal-doc.show {
     display: block;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 50px !important;
 }
 
 .wy-nav-content-wrap .internal-doc {
