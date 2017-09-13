@@ -29,8 +29,7 @@ $(document).ready(function() {
     }
 
     function hideInternalDoc() {
-        console.log("show");
-        $(".internal-doc").show();
+        $(".internal-doc").hide();
     }
 
     var internal = parseInt($.urlParam("internal"));
