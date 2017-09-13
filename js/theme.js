@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    $(".internal-doc").each(function() {
+        var $this = $(this);
+        if ($this.html().replace(/\s|&nbsp;/g, "").length == 0) {
+            $this.remove();
+        }
+    });
+
     // Shift nav in mobile when clicking the menu.
     $(document).on("click", "[data-toggle='wy-nav-top']", function() {
         $("[data-toggle='wy-nav-shift']").toggleClass("shift");
@@ -35,17 +42,17 @@ $(document).ready(function() {
         $(".internal-doc").hide();
     }
 
-    // var internal = parseInt($.urlParam("internal"));
+    var internal = parseInt($.urlParam("internal"));
 
-    // if (internal === 0) {
-    //     localStorage.removeItem("rpp_internal_doc");
-    //     hideInternalDoc();
-    // } else if (internal === 1) {
-    //     showInternalDoc();
-    //     localStorage.setItem("rpp_internal_doc", 1);
-    // } else if (localStorage.getItem("rpp_internal_doc")) {
-    //     showInternalDoc();
-    // }
+    if (internal === 0) {
+        localStorage.removeItem("rpp_internal_doc");
+        hideInternalDoc();
+    } else if (internal === 1) {
+        showInternalDoc();
+        localStorage.setItem("rpp_internal_doc", 1);
+    } else if (localStorage.getItem("rpp_internal_doc")) {
+        showInternalDoc();
+    }
 });
 
 window.SphinxRtdTheme = (function(jquery) {
