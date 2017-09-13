@@ -83,6 +83,7 @@ table td {
 
 .internal-doc.show {
     display: block;
+    font-style: normal;
 }
 
 .wy-nav-content-wrap .internal-doc {
