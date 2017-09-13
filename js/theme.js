@@ -25,8 +25,15 @@ $(document).ready(function() {
     };
 
     var internal = $.urlParam("internal");
+    var persistentInternal = localStorage.getItem("rpp_internal_doc");
 
-    console.log("internal", internal);
+    if (internal !== null) {
+        $(".internal-doc").show();
+    } else if (persistentInternal !== null) {
+        localStorage.setItem("rpp_internal_doc", 1);
+        $(".internal-doc").show();
+    }
+    // console.log("internal", internal);
     // function showInternalDoc() {
     //     $(".internal-doc").show();
     // }
