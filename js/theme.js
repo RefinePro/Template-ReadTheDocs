@@ -24,25 +24,24 @@ $(document).ready(function() {
         return results && results[1] ? results[1] : null;
     };
 
-    var internal = parseInt($.urlParam("internal"));
-    var persistentInternal = localStorage.getItem("rpp_internal_doc");
+    function showInternalDoc() {
+        $(".internal-doc").show();
+    }
 
-    console.log(internal, persistentInternal);
+    function hideInternalDoc() {
+        $(".internal-doc").show();
+    }
+
+    var internal = parseInt($.urlParam("internal"));
 
     if (internal === 0) {
-        console.log("reset");
+        localStorage.removeItem("rpp_internal_doc");
+        hideInternalDoc();
+    } else if (internal === 1) {
+        showInternalDoc();
+    } else if (localStorage.getItem("rpp_internal_doc")) {
+        showInternalDoc();
     }
-
-    if (internal !== null) {
-        $(".internal-doc").show();
-    } else if (persistentInternal !== null) {
-        localStorage.setItem("rpp_internal_doc", 1);
-        $(".internal-doc").show();
-    }
-    // console.log("internal", internal);
-    // function showInternalDoc() {
-    //     $(".internal-doc").show();
-    // }
 });
 
 window.SphinxRtdTheme = (function(jquery) {
