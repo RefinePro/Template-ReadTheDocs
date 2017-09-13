@@ -24,10 +24,10 @@ $(document).ready(function() {
         return results && results[1] ? results[1] : null;
     };
 
-    var internal = $.urlParam("internal");
+    var internal = parseInt($.urlParam("internal"));
     var persistentInternal = localStorage.getItem("rpp_internal_doc");
 
-    // console.log(internal, persistentInternal);
+    console.log(internal, persistentInternal);
 
     if (internal === 0) {
         console.log("reset");
