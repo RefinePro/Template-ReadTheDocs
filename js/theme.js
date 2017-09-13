@@ -42,6 +42,7 @@ $(document).ready(function() {
         hideInternalDoc();
     } else if (internal === 1) {
         showInternalDoc();
+        localStorage.setItem("rpp_internal_doc", 1);
     } else if (localStorage.getItem("rpp_internal_doc")) {
         showInternalDoc();
     }
