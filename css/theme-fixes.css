@@ -78,7 +78,7 @@ table td {
 }
 
 .internal-doc {
-    display: block;
+    display: none;
 }
 
 .internal-doc.show {
