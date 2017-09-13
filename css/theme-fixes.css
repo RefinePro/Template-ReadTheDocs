@@ -84,12 +84,13 @@ table td {
 .internal-doc.show {
     display: block;
     font-style: normal;
+    margin-top: 20px;
 }
 
 .wy-nav-content-wrap .internal-doc {
     border: 1px solid #d9822b;
     padding: 10px;
-    margin-top: 20px;
+
     margin-left: -10px;
     margin-right: -10px;
     position: relative;
