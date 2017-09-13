@@ -29,6 +29,7 @@ $(document).ready(function() {
     }
 
     function hideInternalDoc() {
+        console.log("show");
         $(".internal-doc").show();
     }
 
