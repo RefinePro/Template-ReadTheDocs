@@ -81,7 +81,7 @@ table td {
     display: block;
 }
 
-.internal-doc .show {
+.internal-doc.show {
     display: block;
 }
 
