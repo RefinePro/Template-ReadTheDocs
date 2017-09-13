@@ -27,7 +27,11 @@ $(document).ready(function() {
     var internal = $.urlParam("internal");
     var persistentInternal = localStorage.getItem("rpp_internal_doc");
 
-    console.log(internal, persistentInternal);
+    // console.log(internal, persistentInternal);
+
+    if (internal === 0) {
+        console.log("reset");
+    }
 
     if (internal !== null) {
         $(".internal-doc").show();
