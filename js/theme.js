@@ -25,9 +25,9 @@ $(document).ready(function() {
     };
 
     function showInternalDoc() {
-        $(".wy-nav-content-wrap .internal-doc").append(
-            '<div class="internal-label">private documentation</div>'
-        );
+        $(".wy-nav-content-wrap .internal-doc")
+            .addClass("show")
+            .append('<div class="internal-label">private documentation</div>');
         $(".internal-doc").show();
     }
 
