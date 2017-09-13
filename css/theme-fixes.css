@@ -85,6 +85,7 @@ table td {
     margin-left: -10px;
     margin-right: -10px;
     position: relative;
+    border-radius: 2px;
 }
 
 .internal-doc .internal-label {
@@ -95,7 +96,7 @@ table td {
     display: inline-block;
 
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     box-shadow: none;
     background-color: #d9822b;
     min-width: 20px;
