@@ -77,7 +77,7 @@ table td {
     padding: 6px 13px;
 }
 
-.internal {
+.internal-doc {
     border: 1px solid #d9822b;
     padding: 10px;
     margin-top: 0px;
@@ -86,7 +86,7 @@ table td {
     position: relative;
 }
 
-.internal .label {
+.internal-doc .internal-label {
     position: absolute;
     top: -25px;
     right: 0px;
