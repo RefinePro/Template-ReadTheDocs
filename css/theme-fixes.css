@@ -78,7 +78,7 @@ table td {
 }
 
 .internal-doc {
-    display: none;
+    display: block;
 }
 
 .wy-nav-content-wrap .internal-doc {
