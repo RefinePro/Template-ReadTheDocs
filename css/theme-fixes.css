@@ -79,6 +79,9 @@ table td {
 
 .internal-doc {
     display: none;
+}
+
+.wy-nav-content-wrap .internal-doc {
     border: 1px solid #d9822b;
     padding: 10px;
     margin-top: 0px;
@@ -88,7 +91,7 @@ table td {
     border-radius: 2px;
 }
 
-.internal-doc .internal-label {
+.wy-nav-content-wrap .internal-doc .internal-label {
     position: absolute;
     top: -25px;
     right: 0px;

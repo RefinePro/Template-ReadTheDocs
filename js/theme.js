@@ -27,7 +27,7 @@ $(document).ready(function() {
     function showInternalDoc() {
         $(".internal-doc").show();
         $(".internal-doc")
-            .append('<div class="internal-label">internal documentation</div>')
+            .append('<div class="internal-label">private documentation</div>')
             .show();
     }
 

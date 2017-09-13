@@ -26,13 +26,13 @@
                        
                         
 
-            <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <div class="wy-menu wy-menu-vertical {{ item.internal ? 'internal-doc' }}" data-spy="affix" role="navigation" aria-label="main navigation">
                 <p class="caption"><span class="caption-text">{{ section.name }}</span></p>
 
                 <ul>
 
                     {% for itemId, item in section.items %}
-                        <li class="toctree-l1 {{ itemId == currentMenu ? 'current' }}">
+                        <li class="toctree-l1 {{ itemId == currentMenu ? 'current' }} {{ item.internal ? 'internal-doc' }}">
                             <a class="reference internal {{ itemId == currentMenu ? 'current' }}"
                                href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">
                                 {{ item.text|raw }}
